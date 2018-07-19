@@ -1,0 +1,8 @@
+.input_row {
+	position: relative;
+	height: 29px;
+	margin: 0 0 14px;
+	padding: 10px 35px 10px 15px;
+	border: solid 1px #dadada;
+	background: #fff;
+}
