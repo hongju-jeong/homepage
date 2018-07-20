@@ -2,8 +2,19 @@
 <html>
  <head>
   <meta charset="UTF-8">
-
   <title>회원 가입</title>
+  <script>
+  function verification()
+  {
+    var pw = document.getElementById('mbpw').value;
+    var pw_re = document.getElementById('mbpw_re').value;
+
+    if(pw != pw_re)
+    {
+      return false;
+    }
+  }
+  </script>
  </head>
  <body>
  <form class="layer" name="write_form_member" method="post">
@@ -15,7 +26,7 @@
        <tr>
          <th>아이디</th>
          <td>
-         <input type="text" name="mpid">
+         <input type="text" name="mbid">
          </td>
          <td>
          </td>
