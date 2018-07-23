@@ -3,48 +3,40 @@
  <head>
   <meta charset="UTF-8">
   <title>회원 가입</title>
-  <script>
-  function verification()
-  {
-    var pw = document.getElementById('mbpw').value;
-    var pw_re = document.getElementById('mbpw_re').value;
+  <link rel="stylesheet" type="text/css" href="css/login.css">
 
-    if(pw != pw_re)
-    {
-      return false;
-    }
-  }
-  </script>
  </head>
  <body>
- <form class="layer" name="write_form_member" method="post">
+ <form class="layer" name="f" method="POST" action="./apis/reduplication_check.php">
    <table class="input_row">
-      <tr>
-         <th>이름</th>
-         <td><input type="text" name="mbname"></td>
-      </tr>
        <tr>
          <th>아이디</th>
          <td>
-         <input type="text" name="mbid">
+         <input type="text" name="mbid" id="mbid">
          </td>
          <td>
+          <button type="submit">중복체크</button>
          </td>
        </tr>
        <tr>
          <th>비밀번호</th>
-         <td><input type="password" name="mbpw"></td>
+         <td><input type="password" name="mbpw" id="mbpw"></td>
        </tr>
        <tr>
          <th>비밀번호 확인</th>
-         <td><input type="password" name="mbpw_re"></td>
+         <td><input type="password" name="mbpw_re" id="mbpw_re"></td>
+       </tr>
+       <tr>
+         <th>휴대폰번호</th>
+         <td><input type="tel" name="mbphone" id="mbphone"></td>
        </tr>
        <tr>
         <td>
-          <input type="submit" value="회원가입">
+          <button type="submit">회원가입</button>
         </td>
        </tr>
     </table>
   </form>
+  <script src="js/signup_check.js"></script>
  </body>
 </html>
