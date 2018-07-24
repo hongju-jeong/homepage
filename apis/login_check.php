@@ -27,7 +27,7 @@ if($result = mysqli_query($db, $sql))//????
         {
             // 리디렉션
             echo "<script>alert('Login Succeed.');</script>";
-            echo "<script>location.href='http://www.naver.com';</script>";
+            echo "<script>window.location.replace('../muzy_home.html');</script>";
         }
         else
         {
