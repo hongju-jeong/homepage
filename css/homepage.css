@@ -8,13 +8,13 @@
 {
   background: #FFD700;
   height: 100%;
-  width: 300px;
+  width: 20%;
   float: left;
 }
 #content
 {
   background-color: #EEEEEE;
   height: 100%;
-  width: 100%
-  float: right;
+  width: 80%;
+  float: left;
 }
